@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hunger Crowd</title>
+
+    <meta name="description"
+          content="Hunger Crowd — Stories, People, Culture and Ideas.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0b;
+            color: white;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+            background: rgba(11, 11, 11, 0.96);
+            border-bottom: 1px solid #292929;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            min-height: 88vh;
+            display: flex;
+            align-items: center;
+            padding: 80px 7%;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #bdbdbd;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(55px, 11vw, 130px);
+            line-height: 0.88;
+            letter-spacing: -5px;
+            margin-bottom: 35px;
+        }
+
+        .hero p {
+            max-width: 680px;
+            font-size: 20px;
+            color: #cccccc;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 25px;
+            border: 1px solid white;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+        }
+
+        section {
+            padding: 100px 7%;
+            border-top: 1px solid #292929;
+        }
+
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #cccccc;
+            font-size: 19px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .card {
+            border: 1px solid #292929;
+            padding: 35px;
+            min-height: 200px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #bdbdbd;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #bdbdbd;
+            margin-top: 10px;
+        }
+
+        footer {
+            padding: 30px 7%;
+            border-top: 1px solid #292929;
+            color: #888888;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 18px 5%;
+            }
+
+            nav a {
+                margin-left: 10px;
+            }
+
+            .hero,
+            section {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            h1 {
+                letter-spacing: -3px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">HUNGER CROWD</div>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#stories">Stories</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Independent Media House
+                </div>
+
+                <h1>
+                    HUNGER<br>
+                    CROWD
+                </h1>
+
+                <p>
+                    Stories. People. Culture.
+                    A new media house built to discover,
+                    create and share stories that matter.
+                </p>
+
+                <a class="button" href="#about">
+                    Explore Hunger Crowd
+                </a>
+
+            </div>
+        </section>
+
+        <section id="about">
+
+            <h2 class="section-title">
+                About Hunger Crowd
+            </h2>
+
+            <p class="about-text">
+                Hunger Crowd is an independent media house focused
+                on interesting stories, people, culture, ideas and
+                the conversations shaping the world around us.
+            </p>
+
+        </section>
+
+        <section id="stories">
+
+            <h2 class="section-title">
+                What We Cover
+            </h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Stories</h3>
+                    <p>
+                        Original stories, interviews and perspectives
+                        from people and communities.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Culture</h3>
+                    <p>
+                        Exploring culture, creativity, entertainment
+                        and the things people care about.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Ideas</h3>
+                    <p>
+                        Conversations and ideas that encourage people
+                        to look at the world differently.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+
+            <h2 class="section-title">
+                Get In Touch
+            </h2>
+
+            <p>
+                More from Hunger Crowd coming soon.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Hunger Crowd. All rights reserved.
+    </footer>
+
+</body>
+</html>
